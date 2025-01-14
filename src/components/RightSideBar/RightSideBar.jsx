@@ -1,5 +1,7 @@
 import user from "../../assets/user.png";
 import tt from "../../assets/ttt.jpg";
+import team from "../../assets/team1.jpg";
+import team2 from "../../assets/team2.jpg";
 
 const RightSideBar = () => {
   return (
@@ -33,7 +35,37 @@ const RightSideBar = () => {
               alt=""
             />
             <div className="info">
-              <h4 className="text-slate-100 text-xs">Abid </h4>
+              <h4 className="text-slate-100 text-xs">Jhon </h4>
+            </div>
+          </div>
+          <span className="text-blue-600 h-fit self-center hover:text-white cursor-pointer text-xs">
+            Follow
+          </span>
+        </div>
+        <div className="my-2 w-[285px] flex justify-between items-cente">
+          <div className="flex items-center gap-2">
+            <img
+              className="w-[45px] h-[45px] object-cover rounded-full"
+              src={team}
+              alt=""
+            />
+            <div className="info">
+              <h4 className="text-slate-100 text-xs">mahamud </h4>
+            </div>
+          </div>
+          <span className="text-blue-600 h-fit self-center hover:text-white cursor-pointer text-xs">
+            Follow
+          </span>
+        </div>
+        <div className="my-2 w-[285px] flex justify-between items-cente">
+          <div className="flex items-center gap-2">
+            <img
+              className="w-[45px] h-[45px] object-cover rounded-full"
+              src={team2}
+              alt=""
+            />
+            <div className="info">
+              <h4 className="text-slate-100 text-xs">Zahid Hasan Rabbin </h4>
             </div>
           </div>
           <span className="text-blue-600 h-fit self-center hover:text-white cursor-pointer text-xs">

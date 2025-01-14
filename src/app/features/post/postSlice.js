@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createPost, getAllPost } from "./postApiSlice";
+import { createPost, deletePost, getAllPost, updatePost } from "./postApiSlice";
 
 const postSlice = createSlice({
   name: "post",
@@ -25,7 +25,19 @@ const postSlice = createSlice({
       .addCase(createPost.fulfilled, (state, action) => {
         state.posts.push(action.payload);
         state.loading = false;
-      }).addCase;
+      })
+      .addCase(deletePost.fulfilled, (state, action) => {
+        state.posts = state.posts.filter((data) => data.id != action.payload);
+      })
+      .addCase(updatePost.fulfilled, (state, action) => {
+        state.posts = state.posts.map((item) => {
+          if (item.id == action.payload.id) {
+            return action.payload;
+          } else {
+            return item;
+          }
+        });
+      });
   },
 });
 

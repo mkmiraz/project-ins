@@ -1,22 +1,44 @@
 {
   "post": [
     {
-      "authorName": "Abid Khan",
-      "postContent": "hi instagram",
-      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856410/ttnc7n10eojgqs5wdcsp.jpg",
-      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856411/mljudzfbdi4v1wh1mi2k.jpg",
-      "createAt": "2025-01-14T12:06:51.624Z",
+      "authorName": "Rabbid",
+      "postContent": "hi ",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880474/sbbfbxatz7bo8ojva5cy.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880475/qkqzdwdoio5cbjygdrtz.jpg",
+      "likes": 0,
+      "createAt": "2025-01-14T18:47:55.205Z",
       "updatedAt": null,
       "id": 1
     },
     {
-      "authorName": "Miraz Khondokar",
-      "postContent": "hi",
-      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856778/kwnk4dlwdswatj9eso5l.jpg",
-      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856781/qanb9w4l3gsmfhxwuypk.jpg",
-      "createAt": "2025-01-14T12:13:01.637Z",
-      "updatedAt": null,
+      "authorName": "Rahat",
+      "postContent": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, nemo?",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880522/btw0uvbukggpg3ggnq51.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880523/ncylso5u0ttgacgkvfdu.jpg",
+      "likes": 13,
+      "createAt": "2025-01-14T18:48:43.466Z",
+      "updatedAt": 0,
       "id": 2
+    },
+    {
+      "authorName": "Hasan",
+      "postContent": "Lorem ipsum dolor sit, ",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880552/j8lgsyh560icbehimvig.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880554/ffdmuwgzuuodg5uibzx5.jpg",
+      "likes": 12,
+      "createAt": "2025-01-14T18:49:15.798Z",
+      "updatedAt": 0,
+      "id": 3
+    },
+    {
+      "authorName": "Bahalul",
+      "postContent": "amet consectetur adipisicing elit. Libero, nemo?",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880597/ybyn4a6nx7bqvlpb7d7x.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736880598/oc4ksujtbcsegxyj4ucr.jpg",
+      "likes": 5,
+      "createAt": "2025-01-14T18:49:58.381Z",
+      "updatedAt": 0,
+      "id": 4
     }
   ]
 }
