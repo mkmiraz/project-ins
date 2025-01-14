@@ -1,0 +1,22 @@
+{
+  "post": [
+    {
+      "authorName": "Abid Khan",
+      "postContent": "hi instagram",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856410/ttnc7n10eojgqs5wdcsp.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856411/mljudzfbdi4v1wh1mi2k.jpg",
+      "createAt": "2025-01-14T12:06:51.624Z",
+      "updatedAt": null,
+      "id": 1
+    },
+    {
+      "authorName": "Miraz Khondokar",
+      "postContent": "hi",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856778/kwnk4dlwdswatj9eso5l.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736856781/qanb9w4l3gsmfhxwuypk.jpg",
+      "createAt": "2025-01-14T12:13:01.637Z",
+      "updatedAt": null,
+      "id": 2
+    }
+  ]
+}
