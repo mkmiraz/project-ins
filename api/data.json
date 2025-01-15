@@ -39,6 +39,117 @@
       "createAt": "2025-01-14T18:49:58.381Z",
       "updatedAt": 0,
       "id": 4
+    },
+    {
+      "authorName": "Sabbir Rahman",
+      "postContent": "amet consectetur adipisicing elit. Libero, nemo?",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736944738/bl6zo7nt146uvt15ynpp.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736944739/rvnkglddef048qv8qncd.jpg",
+      "likes": 0,
+      "createAt": "2025-01-15T12:38:58.406Z",
+      "updatedAt": null,
+      "id": 5
+    },
+    {
+      "authorName": "Laizu Akter Nodi",
+      "postContent": "amet consectetur adipisicing elit. Libero, nemo?",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736944823/vikdnhgpv4fb8vdth3eq.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736944824/vaxdda53n4g6suz7yl7n.jpg",
+      "likes": 0,
+      "createAt": "2025-01-15T12:40:23.901Z",
+      "updatedAt": null,
+      "id": 6
+    },
+    {
+      "authorName": "mahamuda islam",
+      "postContent": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, nemo?",
+      "authorPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736945286/ryynalob6ifzvqxvygsc.jpg",
+      "postPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736946079/uzkfbffvffz9vqclfxaq.jpg",
+      "likes": 4,
+      "createAt": "2025-01-15T12:48:06.563Z",
+      "updatedAt": null,
+      "id": 7
+    }
+  ],
+  "story": [
+    {
+      "authorName": "Hasan",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736934870/f2jyhoqzoct4edt2t5og.jpg",
+      "createAt": "2025-01-15T09:54:30.751Z",
+      "updatedAt": null,
+      "id": 1
+    },
+    {
+      "authorName": "Miraz Khondokar",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736935536/elwdmgivazuma5oum5uu.jpg",
+      "createAt": "2025-01-15T10:05:37.565Z",
+      "updatedAt": null,
+      "id": 2
+    },
+    {
+      "authorName": "Fahim Hossain",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736935591/vrufgtwyr8pf1rlawmbz.jpg",
+      "createAt": "2025-01-15T10:06:32.105Z",
+      "updatedAt": null,
+      "id": 3
+    },
+    {
+      "authorName": "Mizanur rahman",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736935647/qo3jsqr7kgrklojowhb2.jpg",
+      "createAt": "2025-01-15T10:07:28.244Z",
+      "updatedAt": null,
+      "id": 4
+    },
+    {
+      "authorName": "naim Apon",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736944374/dzn8drtw0s4unklbf1rx.jpg",
+      "createAt": "2025-01-15T12:32:53.965Z",
+      "updatedAt": null,
+      "id": 5
+    },
+    {
+      "authorName": "laizu akter nodi",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736944424/drqep78scvmelommjnwn.jpg",
+      "createAt": "2025-01-15T12:33:43.401Z",
+      "updatedAt": null,
+      "id": 6
+    },
+    {
+      "authorName": "samim Rahman",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736944681/o48nzh0rucenb3gpoh6b.jpg",
+      "createAt": "2025-01-15T12:38:01.057Z",
+      "updatedAt": null,
+      "id": 7
+    },
+    {
+      "authorName": "moon ghosh",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736945151/sol4s7rewrubi0a4d1ic.jpg",
+      "createAt": "2025-01-15T12:45:50.670Z",
+      "updatedAt": null,
+      "id": 8
+    },
+    {
+      "authorName": "Rahela Khondokar",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736945555/rq76zeuxyemwuhb2rwiu.jpg",
+      "createAt": "2025-01-15T12:52:34.861Z",
+      "updatedAt": null,
+      "id": 9
+    },
+    {
+      "authorName": "Miraz Khondokar",
+      "postContent": "",
+      "storyPhoto": "https://res.cloudinary.com/dl960tfs5/image/upload/v1736946020/bamv8pw2dd3n7jgn3ycz.jpg",
+      "createAt": "2025-01-15T13:00:19.699Z",
+      "updatedAt": null,
+      "id": 10
     }
   ]
 }

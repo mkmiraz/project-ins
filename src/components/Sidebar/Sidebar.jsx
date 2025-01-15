@@ -22,13 +22,16 @@ import { useDispatch } from "react-redux";
 import { createPost } from "../../app/features/post/postApiSlice";
 import { deveImageUpload } from "../../helpers/cloudinary";
 import Swal from "sweetalert2";
+import { createStory } from "../../app/features/story/storyApiSlice";
 
 const Sidebar = () => {
   // get dispatch
   const dispatch = useDispatch();
   // use state
   const [satting, setSatting] = useState(false);
+  const [file, setFile] = useState(null);
   const [postModal, setPostModal] = useState(false);
+  const [story, setStory] = useState(false);
   const [authorPhoto, setAuthorPhoto] = useState(null);
   const [postPhoto, setPostPhoto] = useState(null);
   const [input, setInput] = useState({
@@ -79,6 +82,25 @@ const Sidebar = () => {
     setPostModal(false);
   };
 
+  // handle story
+  const handleStory = async (e) => {
+    e.preventDefault();
+    const storyFile = await deveImageUpload({
+      file: file,
+      preset: "shop-app",
+      api_key: "dl960tfs5",
+    });
+    Swal.fire({
+      icon: "success",
+      title: "Story Create successfull",
+      showConfirmButton: false,
+      timer: 500,
+      position: "top-center",
+    });
+    dispatch(createStory({ ...input, storyPhoto: storyFile.secure_url }));
+    setStory(false);
+  };
+
   // satting modal show hide
   const handleSattingModel = () => {
     if (satting) {
@@ -89,6 +111,7 @@ const Sidebar = () => {
   };
   return (
     <>
+      {/* post modat Start */}
       <Modal isOpen={postModal}>
         <div className="w-[400px] h-[400px]  z-50 rounded-lg shadow-lg bg-black bg-opacity-40 fixed bottom-0 right-0 top-0 left-0 m-auto">
           <div className="title flex justify-between p-5">
@@ -145,6 +168,8 @@ const Sidebar = () => {
           </form>
         </div>
       </Modal>
+      {/* story upload modal */}
+
       <div className="sidebar w-[340px] h-screen px-3 py-5 fixed top-0 left-0 border-r  border-gray-900 flex flex-col">
         <div className="title p-2 ">
           <img
@@ -178,6 +203,7 @@ const Sidebar = () => {
               </a>
             </li>
             <li className="">
+              -
               <a
                 className="text-white flex justify-start  gap-2  py-3 px-2 rounded-md hover:bg-slate-50 hover:bg-opacity-10"
                 href="#"
@@ -190,12 +216,47 @@ const Sidebar = () => {
             </li>
             <li className="">
               <a
-                className="text-white flex justify-start  gap-2  py-3 px-2 rounded-md hover:bg-slate-50 hover:bg-opacity-10"
-                href="#"
+                onClick={() => setStory(true)}
+                className="text-white flex justify-start relative  gap-2 cursor-pointer  py-3 px-2 rounded-md hover:bg-slate-50 hover:bg-opacity-10"
               >
+                <Modal isOpen={story}>
+                  <div className="absolute w-[300px] h-fit bg-slate-500">
+                    <form
+                      onSubmit={handleStory}
+                      className="p-2 bg-black bg-opacity-90"
+                    >
+                      <div className="w-full flex flex-col p-2">
+                        <span className="text-yellow-50 text-xs">
+                          Author Name
+                        </span>
+                        <input
+                          name="authorName"
+                          value={input.authorName}
+                          onChange={hendleInputChange}
+                          className="py-1 px-2 outline-none rounded-sm bg-slate-600 bg-opacity-35 text-white mt-1"
+                          type="text"
+                        />
+                      </div>
+                      <div className="w-full flex flex-col p-2">
+                        <span className="text-yellow-50 text-xs">
+                          Story Photo
+                        </span>
+                        <input
+                          className="py-1 px-2 outline-none rounded-sm bg-slate-600 bg-opacity-35 text-white mt-1"
+                          type="file"
+                          name="storyPhoto"
+                          onChange={(e) => setFile(e.target.files[0])}
+                        />
+                      </div>
+                      <button className="py-2 px-4 mt-2 ml-2 mb-5 rounded-sm text-white text-sm box-decoration-slice bg-gradient-to-r from-amber-500 to-rose-600">
+                        Create Story Photo
+                      </button>
+                    </form>
+                  </div>
+                </Modal>
                 <PiVideoFill className="text-white text-2xl" />
                 <span className="self-end mt-1 font-medium text-sm tracking-widest">
-                  Reels
+                  Story
                 </span>
               </a>
             </li>
@@ -266,8 +327,7 @@ const Sidebar = () => {
             <li className="">
               <a
                 onClick={handleSattingModel}
-                className="text-white flex justify-start  gap-2  py-3  px-2 rounded-md hover:bg-slate-50 hover:bg-opacity-10"
-                href="#"
+                className="text-white flex justify-start cursor-pointer gap-2  py-3  px-2 rounded-md hover:bg-slate-50 hover:bg-opacity-10"
               >
                 <FaBars className="text-white text-2xl" />
                 <span className="self-end mt-1 font-medium text-sm tracking-widest">
